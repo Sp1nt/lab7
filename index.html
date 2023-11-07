@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <a href="#" class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/603px-Amazon_logo.svg.png"
+                alt="Amazon_logo">
+        </a>
+        <div class="content">
+            <h1 class="content-title">Create Account</h1>
+            <form action="#" method="get">
+                <div class="opt">
+                    <label class="label_form" for="fullname">Your name</label>
+                    <input class="input_form" type="text" name="fullname" placeholder="First and last name"
+                        pattern="^[\w]+ [\w]+$" title="Input first name or lat name (example, Andru Smith)" required>
+                </div>
+
+                <div class="opt">
+                    <label class="label_form" for="numEmail">Mobile number or email</label>
+                    <input class="input_form" name="email" type="tel" pattern="[0-9+-]+|[^@\s]+@[^@\s]+" required>
+                </div>
+
+                <div class="opt">
+                    <label class="label_form" for="psw">Password</label>
+                    <input class="input_form" type="password" name="psw" placeholder="At least 6 characters"
+                        minlength="6" required>
+                </div>
+
+                <div class="opt">
+                    <label class="label_form" for="rePassword">Re-enter password</label>
+                    <input class="input_form" name="re-psw" type="password" minlength="6" required>
+                </div>
+                <input class="button_form" type="submit" value="Continue" id="#">
+            </form>
+            <div class="content-info">
+                <p class="about-text">
+                    By creating an account, you agree to Amazon's<br>
+                    <a class="about-link" href="#">Conditions of Use</a> and <a class="about-link" href="#"> Pricacy
+                        Notice</a>.
+                </p>
+                <hr>
+                <p class="about-text">
+                    Already have an account? <a class="about-link" href="#"> Sign in <span
+                            class="about-symbol"><sup>&#9658;</sup></span></a><br>
+                    Buying for work? <a class="about-link" href="#">Create a free business account <span
+                            class="about-symbol"><sup>&#9658;</sup></span></a>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
